@@ -29,8 +29,6 @@ function trace_lines(lines::Vector{Line})
 			grid[1+x,1+line.y1] += 1
 		end
 	   end
-	   println(line)
-	   display(sparse(grid))
 	end
 	grid
 end
