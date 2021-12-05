@@ -35,7 +35,6 @@ function trace_lines(lines::Vector{Line})
 			grid[pos[1],pos[2]] += 1
 		end
 	   end
-
 	end
 	grid
 end
