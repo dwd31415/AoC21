@@ -17,5 +17,4 @@ for line ∈ lines
 end
 
 grid = trace_lines(admissable_lines)
-global_max = maximum(grid)
-println(sum(grid .== global_max))
+println(sum(grid .>= 2))
