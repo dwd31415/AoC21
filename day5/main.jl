@@ -10,9 +10,7 @@ for line ∈ lines
 	 pattern_match = match(pattern, line)
 	 if !isnothing(pattern_match)
 		x1,y1,x2,y2 = (str -> parse(Int64, str)).(pattern_match.captures) 
-		if x1 == x2 || y1 == y2 
-			push!(admissable_lines, Line(x1,x2,y1,y2))
-		end
+		push!(admissable_lines, Line(x1,x2,y1,y2))
 	 end
 end
 
